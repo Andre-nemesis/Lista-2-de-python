@@ -13,7 +13,7 @@ def add_dict():
 
 for i in range(num_chaves):
     add_dict()
-if 'idade' in dicionario:
+if 'idade' in dicionario or 'Idade' in dicionario:
     print(dicionario['idade'])
 else:
     print('A chave "idade" não está no dicionário.')
