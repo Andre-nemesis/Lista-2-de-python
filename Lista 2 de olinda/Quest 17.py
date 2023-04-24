@@ -8,10 +8,12 @@ for i in range(3):
     listNomes.append(str(input(f'Digite o {i + 1}° nome: ')))
 tupNome = tuple(listNomes)
 
+numMaria = 0
 for i in range(3):
-    if 'Maria' in tupNome:
-        print('\nMaria está na tupla.')
-        break
-    else:
-        print('\nMaria não está na tupla.')
-        break
+    if 'Maria' in tupNome[i]:
+        numMaria += 1
+        
+if 'Maria' in tupNome:
+    print(f'A palavra "Maria" apareceu {numMaria} vezes')
+else:
+    print('\nMaria não está na tupla.')
